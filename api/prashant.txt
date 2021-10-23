@@ -1,0 +1,12 @@
+------------------------ get un-settle match ----------------------------------
+http://localhost/betdip.com/Apicontroller/getSettleMatchList
+
+
+
+---------------delete bet by match id----------------
+
+http://localhost/betdip.com/Betentrycntr/deleteBetByMatchId/28912774
+
+--------------------undo bet my match id --------------------------
+
+http://localhost/betdip.com/Betentrycntr/undoBetByMatchId/28912774

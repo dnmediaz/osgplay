@@ -1,0 +1,38 @@
+
+Live Base Url : http://betdip.com/
+
+1. fancy bet listing
+Test Url : Betentrycntr/GatBetFancyData/:marketId/:userTypeId/:userId/:matchId/:fancyId
+Method : GET
+Header Params - username (mandatory), password (mandatory)
+
+2. Get match listing
+Test Url : Apimastercontroller/get_matches
+Method : GET
+Header Params - username (mandatory), password (mandatory)
+
+3. Matches status
+Test Url : Apimastercontroller/match_status
+Method : POST
+Header Params - username (mandatory), password (mandatory)
+Params : {"match_id":"28879694","status":"A"}
+
+4. Get match session listing
+Test Url : Apimastercontroller/get_match_session/:match_id
+Method : GET
+Header Params - username (mandatory), password (mandatory)
+
+5. match session status
+Test Url : Apimastercontroller/match_session_status
+Method : POST
+Header Params - username (mandatory), password (mandatory)
+Params : {"fancy_id":"530","status":"A"}
+Note : (status "A" for actived session and "D" for deactived session)
+
+
+
+
+
+
+
+

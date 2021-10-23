@@ -1,0 +1,89 @@
+
+Live Base Url : http://betdip.com/
+
+1. Get one page report
+Test Url : /Apiadmincontroller/one_page_report
+Method : POST
+Params : {"user_id":15,"from_date":"2018-08-28","from_time":"01:00:00","to_date":"2018-08-28","to_time":"23:00:00","type":1,"page_no":1}
+Header Params - username (mandatory), password (mandatory)
+Note : from_data,to_date format 2018-07-02, type (1=>'Bet history','2'=>'Profit and loss','3'=>'Account statement','4'=>'login report')
+
+2. Get one page report profit and loss
+Test Url : /Apiadmincontroller/one_page_report_pl
+Method : POST
+Params : {"user_id":15,"from_date":"2018-08-28","from_time":"01:00:00","to_date":"2018-08-28","to_time":"23:00:00","sport_id":0,"page_no":1} 
+Header Params - username (mandatory), password (mandatory)
+Note : from_data,to_date format 2018-07-02, sports_id 0 -> All , -1 -> Session fancy , 1 -> soccer , 2 -> tennis , 4 -> cricket
+
+3. Get one page report export
+Test Url : /Apiadmincontroller/one_page_report_export
+Method : POST
+Params : {"user_id":15,"from_date":"2018-08-28","from_time":"01:00:00","to_date":"2018-08-28","to_time":"23:00:00","type":1}
+Header Params - username (mandatory), password (mandatory)
+Note : from_data,to_date format 2018-07-02, type (1=>'Bet history'), 
+
+4. Get one page report profit and loss export
+Test Url : /Apiadmincontroller/one_page_report_pl_export
+Method : POST
+Params : {"user_id":15,"from_date":"2018-08-28","from_time":"01:00:00","to_date":"2018-08-28","to_time":"23:00:00","sport_id":0} 
+Header Params - username (mandatory), password (mandatory)
+Note : from_data,to_date format 2018-07-02, sports_id 0 -> All , -1 -> Session fancy , 1 -> soccer , 2 -> tennis , 4 -> cricket
+
+5. Save global bet liablity
+Test Url : Apiadmincontroller/save_global_bet_liablity
+Method : POST
+Params : {"max_bet_liability":"1000"}
+Header Params - username (mandatory), password (mandatory)
+
+6. Save global market liablity
+Test Url : Apiadmincontroller/save_global_market_liablity
+Method : POST
+Params : {"max_market_liability":"5000"}
+Header Params - username (mandatory), password (mandatory)
+
+7. Save match bet liablity
+Test Url : Apiadmincontroller/save_match_bet_liablity
+Method : POST
+Params : {"max_bet_liability":"1000","MarketId":"1.148984666"}
+Header Params - username (mandatory), password (mandatory)
+
+8. Save match market liablity
+Test Url : Apiadmincontroller/save_match_market_liablity
+Method : POST
+Params : {"max_market_liability":"5000","MarketId":"1.148984666"}
+Header Params - username (mandatory), password (mandatory)
+
+9. Save global session bet liablity
+Test Url : Apiadmincontroller/save_global_session_bet_liablity
+Method : POST
+Params : {"max_session_bet_liability":"1000"}
+Header Params - username (mandatory), password (mandatory)
+
+10. Save global session liablity
+Test Url : Apiadmincontroller/save_global_session_liablity
+Method : POST
+Params : {"max_session_liability":"5000"}
+Header Params - username (mandatory), password (mandatory)
+
+11. Save session bet liablity
+Test Url : Apiadmincontroller/save_session_bet_liablity
+Method : POST
+Params : {"max_bet_liability":"1000","ID":"418"}
+Header Params - username (mandatory), password (mandatory)
+
+12. Save session liablity
+Test Url : Apiadmincontroller/save_session_liablity
+Method : POST
+Params : {"max_market_liability":"5000","ID":"418"}
+Header Params - username (mandatory), password (mandatory)
+
+
+
+
+
+
+
+
+
+
+
